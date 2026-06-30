@@ -1714,6 +1714,7 @@ txIndex fx_Array_prototype_flatAux(txMachine* the, txSlot* source, txIndex lengt
 				mxDefineIndex(start, 0, XS_GET_ONLY);
 				start++;
 			}
+			mxPop();
 		}
 		index++;
 	}
