@@ -2052,9 +2052,9 @@ txIndex fx_Array_prototype_flatAux(txMachine* the, txSlot* source, txIndex lengt
 			else {
 				mxPushSlot(mxResult);
 				mxDefineIndex(start, 0, XS_GET_ONLY);
-				mxPop();
 				start++;
 			}
+			mxPop();
 		}
 		index++;
 	}
